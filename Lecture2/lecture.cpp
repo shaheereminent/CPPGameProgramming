@@ -1,14 +1,51 @@
 #include <iostream>
 #include <vector>
 
+
+class Student
+{
+    std::string m_first = "First";
+    std::string m_last  = "Last";
+    int         m_id    = 0;
+    float       m_avg   = 0;
+
+public:
+
+    Student() {};
+    
+    Student(std::string first, std::string last, int id, float avg)
+        : m_first  (first)
+        , m_last   (last)
+        , m_id     (id)
+        , m_avg    (avg)
+    {};
+
+    std::string getFirst()
+    {
+        return m_first;
+    };
+
+    std::string getLast()
+    {
+        return m_last;
+    };
+
+    int getID()
+    {
+        return m_id;
+    };
+
+    float getAvg()
+    {
+        return m_avg;
+    };
+
+
+};
+
 int main(int argc, char * argv[]) 
 {
 
-    int a = 42;
-    int b = 10;
-    std::string first = "Shaheer";
-    std::string last  = "Inayat Ali";
-    std::string name  = first + " " + last;
     std::vector<int> vec;
     vec.push_back(42);
     vec.push_back(10); 
@@ -23,13 +60,17 @@ int main(int argc, char * argv[])
         std::cout << "this is range based loop "<< a << "\n";
     }
 
-    std::cout << "This is vector" << vec[0] << std::endl;
-    std::cout << vec[1] << "\n";
-    std::cout << first << " " << last << std::endl;
-    std::cout << (a + b) << std::endl;
-    std::cout << a << " " << b << std::endl;
-    std::cout << "Hello, World!" << std::endl;
-    std::cout << name << std::endl;
+    std::cout << "Below default class is being initialized" << std::endl;
+
+    Student s1;
+
+    std::cout << "Below parametrized class is being initialized" << std::endl;
+
+    Student s2("Shaheer", "Inayat Ali", 1, 203.1);
+
+    std::cout << s2.getFirst() << std::endl;
+ 
+    std::cout << s2.getAvg() << std::endl;
 
     return 0;
 };
