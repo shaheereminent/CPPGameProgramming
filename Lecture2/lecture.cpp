@@ -64,6 +64,8 @@ int main(int argc, char * argv[])
 
     Student s1;
 
+    std::cout << s1.getFirst() << std::endl;
+
     std::cout << "Below parametrized class is being initialized" << std::endl;
 
     Student s2("Shaheer", "Inayat Ali", 1, 203.1);
