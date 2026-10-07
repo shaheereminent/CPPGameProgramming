@@ -1,8 +1,0 @@
-- [x] 30m C++ learning
-- [x] update modal project
-- [x] upload dice project
-- [ ] capstone JS project (ExpenseTracker)
-- [ ] record gameplay new
-- [ ] edit old, new gameplay & merge
-- [ ] create thumbnail & upload
-- [ ] create a draft of description for YT

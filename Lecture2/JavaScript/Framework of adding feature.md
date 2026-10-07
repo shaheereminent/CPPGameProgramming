@@ -1,5 +1,0 @@
-1. WHAT is the feature?        → "Show player names"
-2. WHERE does it live?         → "In HTML, next to header"
-3. WHAT data does it need?     → "An array of 2 names"
-4. HOW does it change state?   → "On page load, from prompt or random"
-5. WHAT functions do I need?   → "getPlayerName, displayPlayers"
